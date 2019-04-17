@@ -30,5 +30,10 @@ var app = new Vue({
           '1546969049': {text: 'books'},
           '1546969225': {text: 'movies'}
         }
+      },
+      methods: {
+        yell() {
+          alert('I am yelling now!!!!!!');
+        }
       }
 });
