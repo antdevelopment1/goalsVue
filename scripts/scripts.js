@@ -6,8 +6,8 @@ var app = new Vue({
         titleMessage: 'Title Message Vue!!!!!',
         isTextDisplayed: true,
         newActivity: {
-          title: 'Default Title',
-          notes: 'Default Notes'
+          title: '',
+          notes: ''
         },
         items: {1: {name: "john"}, 2: {name: "jen"}, 3:{name: "jasmine"}},
         user: {
@@ -45,6 +45,9 @@ var app = new Vue({
         },
         toggleFormDisplay() {
           this.isFormDisplayed = !this.isFormDisplayed;
+        },
+        createActivity() {
+          console.log(this.newActivity)
         }
       }
 });

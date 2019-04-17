@@ -44,11 +44,11 @@
                 </div>
                 <div class="field">
                   <label for="" class="class">Notes</label>
-                  <textarea v-model="newActivity.notes" name="" id="" cols="30" rows="10" placeholder="Textarea"></textarea>
+                  <textarea v-model="newActivity.notes" name="" id="" cols="30" rows="10" placeholder="Write some note here..."></textarea>
                 </div>
                 <div class="field is-grouped">
                   <div class="control">
-                    <button class="button is-link">Create Activity</button>
+                    <button @click=createActivity class="button is-link">Create Activity</button>
                     <button  @click="toggleFormDisplay()" class="button is-text">
                     Cancel
                     </button>
