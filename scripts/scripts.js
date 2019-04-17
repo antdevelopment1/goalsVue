@@ -5,6 +5,9 @@ var app = new Vue({
         message: 'Hello Vue!',
         titleMessage: 'Title Message Vue!!!!!',
         isTextDisplayed: true,
+        newActivity: {
+          title: ''
+        },
         items: {1: {name: "john"}, 2: {name: "jen"}, 3:{name: "jasmine"}},
         user: {
           name: 'Filip Jerga',
