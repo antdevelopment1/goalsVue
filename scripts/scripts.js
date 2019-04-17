@@ -32,8 +32,8 @@ var app = new Vue({
         }
       },
       methods: {
-        yell() {
-          alert('I am yelling now!!!!!!');
+        toggleTextDisplay() {
+          this.isTextDisplayed = !this.isTextDisplayed
         }
       }
 });
