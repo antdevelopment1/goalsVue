@@ -1,6 +1,7 @@
 var app = new Vue({
     el: "#vueGoalApp",
     data: {
+        isFormDisplayed: false,
         message: 'Hello Vue!',
         titleMessage: 'Title Message Vue!!!!!',
         isTextDisplayed: true,
@@ -9,7 +10,7 @@ var app = new Vue({
           name: 'Filip Jerga',
           id: '-Aj34jknvncx98812',
         },
-        goals: {
+        activities: {
           '1546968934': {
             title: 'Learn Vue.js',
             notes: 'I started today and it was not good.',
