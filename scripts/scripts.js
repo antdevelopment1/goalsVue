@@ -4,6 +4,7 @@ var app = new Vue({
         message: 'Hello Vue!',
         titleMessage: 'Title Message Vue!!!!!',
         isTextDisplayed: true,
+        items: [1,2,3,4,5,6],
         user: {
           name: 'Filip Jerga',
           id: '-Aj34jknvncx98812',
