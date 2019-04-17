@@ -50,40 +50,18 @@
               </div>
             </div>
           </div>
+          </section>
           <div class="column is-9">
             <div class="box content">
-              <article class="post">
-                <h4>Reading Harry Potter</h4>
-                <div class="media">
-                  <div class="media-left">
-                    <p class="image is-32x32">
-                      <img src="./images/user.png">
-                    </p>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <a href="#">Filip Jerga</a> updated 34 minutes ago &nbsp;
-                      </p>
-                    </div>
-                  </div>
-                  <div class="media-right">
-                    <span>Progress Bar Here</span>
-                  </div>
-                </div>
-              </article>
-              <article class="post" v-for="activity in activities">
-                <h4>
-                  {{activity.title}}
-                </h4>
-                <a href="#">Updated {{activity.updatedAt}} minutes ago &nbsp;</a>
-              </article>
+              <activity-item v-for="activity in activities" v-bind:activity="activity"
+              v-bind:key="activity.id"></activity-item>
             </div>
           </div>
         </div>
       </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./components/ActivityItem.js"></script>
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>
