@@ -34,7 +34,7 @@
       <section class="container">
         <div class="columns">
           <div class="column is-3">
-            <a @click="isFormDisplayed = !isFormDisplayed" class="button is-primary is-block is-alt is-large" href="#">New Activity</a>
+            <a v-if="!isFormDisplayed" @click="isFormDisplayed = !isFormDisplayed" class="button is-primary is-block is-alt is-large" href="#">New Activity</a>
             <div v-if="isFormDisplayed" class="create-form">
               <h2>Create Activity</h2>
               <div class="field">
@@ -42,9 +42,16 @@
                 <div class="control">
                   <input v-model="newActivity.title" type="text" class="input" placeholder="Read a Book">
                 </div>
+                <div class="field">
+                  <label for="" class="class">Notes</label>
+                  <textarea v-model="newActivity.notes" name="" id="" cols="30" rows="10" placeholder="Textarea"></textarea>
+                </div>
                 <div class="field is-grouped">
                   <div class="control">
                     <button class="button is-link">Create Activity</button>
+                    <button  @click="toggleFormDisplay()" class="button is-text">
+                    Cancel
+                    </button>
                   </div>
                 </div>
               </div>
